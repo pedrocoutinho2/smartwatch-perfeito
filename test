@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+ 
+void soma(int n, int *ps){
+    int s=0, i;
+     
+    for (i=0; i<=n; i++){
+        s = s + i;
+        }
+        *ps = s;
+}
+ 
+int main(){
+    int n, s;
+     
+    printf("Digite o valor de n: ");
+    scanf("%d", &n);
+     
+    soma(n, &s);
+     
+    printf("%d\n", s);
+    getche();
+    return (0);
+}
